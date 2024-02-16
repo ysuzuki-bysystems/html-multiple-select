@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf8" />
+    <title>MULTIPLE SELECT</title>
+  </head>
+  <body style="margin: 0;">
+    <select multiple style="width: 100vw; height: 100vh;">
+    </select>
+    <script type="module">
+const s = document.querySelector("select");
+for (let i = 0; i < 100; i++) {
+  s.append(Object.assign(document.createElement("option"), {
+    textContent: `OPT${i}`,
+  }));
+}
+    </script>
+  </body>
+</html>
